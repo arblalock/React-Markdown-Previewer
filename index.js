@@ -1,11 +1,8 @@
 const {render} = ReactDOM;
 const {connect, Provider} = ReactRedux;
 const {createStore, combineReducers} = Redux;
-
 const UPDATE = "UPDATE";
-
 const changeT = (txt) => ({type: UPDATE, txt});
-
 const initState = `# Large Header
 
 ## Sub Header
@@ -28,7 +25,6 @@ Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src
 
 You can also make text **bold**... whoa!
 `
-
 const txtReducer = (state = initState, action) => {
   switch (action.type) {
     case UPDATE:
@@ -50,7 +46,6 @@ class Editor extends React.Component {
   }
 
   render() {
-
     return (<div className="editor-cont">
       <h2 className="head">Enter Markdown</h2>
       <textarea id="editor" className="inputarea" onChange={this.handleChange} value={this.props.txt} rows="10" cols="70"></textarea>
