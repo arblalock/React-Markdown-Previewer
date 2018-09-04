@@ -1,6 +1,6 @@
 # React-Markdown-Previewer
 
-**Demo:**  https://codepen.io/acor07/full/JByPvo/
+**Demo:**  https://codepen.io/acor07/full/VBKWxe/
 
 **Description:** A [Markdown](https://en.wikipedia.org/wiki/Markdown) previewer that allows you to see what your formatted Markdown will look like!
 * Created with React and Redux
